@@ -44,6 +44,7 @@ input[type=text]:hover, input[type=password]:hover{
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 /* Set a style for all buttons */
@@ -102,7 +103,10 @@ button:hover {
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
-
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" placeholder="Enter First Name">
+    <label for="lname">Last Name</label>
+    <input type="text" name="lname" placeholder="Enter Last Name">
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
 
@@ -111,6 +115,11 @@ button:hover {
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <label for="birthday">Gender:</label>
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="Other">Other
+    <br><br>
     
     <label>
       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -121,8 +130,8 @@ button:hover {
     <div class="clearfix">
 			<button type="submit" class="signupbtn">Sign Up</button>
       <button type="button" class="cancelbtn">Cancel</button>
-      
-    </div>
+
+      </div>  
   </div>
 </form>
 
